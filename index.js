@@ -19,6 +19,11 @@ app.use(express.json())
 // User registration route api
 app.use('/api/user' , router)
 
+// 
+app.get('/', (req,res)=> {
+    return res.send("Hello, World!")
+})
+
 // Listen on port
 app.listen(PORT , () => {
     console.log("Listening on", PORT)
