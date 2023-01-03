@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const DB_URI = "mongodb://localhost:27017/Vocally";
+const DB_URI = "mongodb+srv://developerszone:developerszone@developers-zone.llw0kbk.mongodb.net/test";
 
 const connectDatabase = () => {
     mongoose.connect(DB_URI , () => {

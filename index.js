@@ -2,14 +2,15 @@ import express from "express";
 import cors from 'cors'
 import router from "./routes/register.js";
 import connectDatabase from "./db.js";
-
+import { config } from "dotenv";
+config()
 
 // Connect to database
 connectDatabase()
 // Server instance
 const app = express()
 // Constants
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // MIDDLEWARE
 app.use(cors())
