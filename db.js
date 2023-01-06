@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+const mongoose = require('mongoose')
 const DB_URI = "mongodb+srv://developerszone:developerszone@developers-zone.llw0kbk.mongodb.net/test";
 
 const connectDatabase = () => {
@@ -8,5 +7,5 @@ const connectDatabase = () => {
     })
 }
 
-export default connectDatabase;
+module.exports = connectDatabase;
 

@@ -1,9 +1,9 @@
-import express from "express";
-import cors from 'cors'
-import router from "./routes/register.js";
-import connectDatabase from "./db.js";
-import { config } from "dotenv";
-config()
+const express = require("express") ;
+const cors = require("cors") ;
+const router = require("./routes/register.js") ;
+const connectDatabase = require("./db.js") ;
+const dotenv = require("dotenv") ;
+dotenv.config()
 
 // Connect to database
 connectDatabase()

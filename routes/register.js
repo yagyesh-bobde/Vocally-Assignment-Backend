@@ -1,7 +1,6 @@
-import { Router } from "express"
-import User from "../models/User.js"
-
-const router = Router()
+const express = require('express')
+const User = require('../models/User.js')
+const router = express.Router()
 
 // API 1: POST- Create a User
 router.post('/newUser', async (req, res) => {
@@ -32,4 +31,4 @@ router.post('/newUser', async (req, res) => {
 // API 2: GET: Get all Users
 
 
-export default router;
+module.exports = router;
